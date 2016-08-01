@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_waifu_id"
+        android:title="Sort by Id"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_name"
+        android:title="Sort by Seiyuu"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_age"
+        android:title="Sort by Age"
+        android:orderInCategory="300"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_employer"
+        android:title="Sort by Employer"
+        android:orderInCategory="400"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_dirty"
+        android:title="Sort by Dirtyness"
+        android:orderInCategory="500"
+        app:showAsAction="never" />
+
+</menu>

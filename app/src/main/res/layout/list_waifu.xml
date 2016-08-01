@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ID: "
+        android:id="@+id/first"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name"
+        android:visibility="gone"
+        android:id="@+id/second"
+        android:layout_below="@+id/first"
+        android:layout_alignStart="@+id/first"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Title: "
+        android:visibility="gone"
+        android:id="@+id/third"
+        android:layout_below="@+id/second"
+        android:layout_alignStart="@+id/second" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Seiyuu: "
+        android:id="@+id/fourth"
+        android:visibility="gone"
+        android:layout_below="@+id/third"
+        android:layout_alignStart="@+id/third" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Archetype"
+        android:id="@+id/fifth"
+        android:visibility="gone"
+        android:layout_below="@+id/fourth"
+        android:layout_alignStart="@+id/fourth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Canon"
+        android:visibility="gone"
+        android:id="@+id/sixth"
+        android:layout_below="@+id/fifth"
+        android:layout_alignStart="@+id/fifth"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

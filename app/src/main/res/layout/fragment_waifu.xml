@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.owner.betterthanmal.FragmentWaifu">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/waifu_search"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:hint="Enter Waifu Name"
+        android:inputType="text"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/waifu_search"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/to_insert_waifu"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_insert_waifu"
+        android:text="Insert Waifu"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/outline"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

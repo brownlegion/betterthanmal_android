@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.owner.edp.ActivityAdmin">
+
+    <item
+        android:id="@+id/menu_waifu_id"
+        android:title="Sort by Id"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_name"
+        android:title="Sort by Name"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_title"
+        android:title="Sort by Title"
+        android:orderInCategory="300"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_seiyuu"
+        android:title="Sort by Seiyuu"
+        android:orderInCategory="400"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_archetype"
+        android:title="Sort by Archetype"
+        android:orderInCategory="500"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_waifu_canon"
+        android:title="Sort by Canon"
+        android:orderInCategory="600"
+        app:showAsAction="never" />
+
+</menu>
