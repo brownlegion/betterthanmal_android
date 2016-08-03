@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -43,6 +44,32 @@ public class ActivityAdmin extends AppCompatActivity implements Constants{
         mContext = this;
         log = (ListView)findViewById(R.id.admin_logs);
         users = (ListView)findViewById(R.id.admin_users);
+        users.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                String userid = userList.get(position).getId();
+                Log.i(TAG, userid);
+                //Make an alert dialog here.
+                /*if ((!userid.equals("1")) && (!userid.equals("5"))) {
+                    Map<String, String> parameters = new HashMap<>();
+                    parameters.put("hash", hash);
+                    parameters.put("query", "delete from users where user_id=" + userid);
+                    ApiCaller.getInstance(mContext).setAPI(ip, queryPath, null, parameters, Request.Method.POST).exec(new CallbackDefaultVolley() {
+                        @Override
+                        public void onDelivered(String result) {
+                            Log.i(TAG, "delivered  " + result);
+                            //Refresh list here.
+                        }
+
+                        @Override
+                        public void onException(String e) {
+                            Log.i(TAG, "exception " + e);
+                        }
+                    });
+                }*/
+                return false;
+            }
+        });
     }
 
     @Override

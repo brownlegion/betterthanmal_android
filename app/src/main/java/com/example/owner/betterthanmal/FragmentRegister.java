@@ -97,7 +97,7 @@ public class FragmentRegister extends Fragment implements View.OnClickListener, 
                     (!password.equals("")) && (!password.isEmpty())) {
                 Log.i(TAG + " good", firstname + " " + lastname + " " + email + " " + password);
                 Map<String, String> parameters = new HashMap<>();
-                parameters.put("hash", "1d951f1953958f15a71e2978e37267ebaed1a06d");
+                parameters.put("hash", hash);
                 parameters.put("ufirstname", firstname);
                 parameters.put("ulastname", lastname);
                 parameters.put("uemail", email);
