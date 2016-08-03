@@ -1,35 +1,16 @@
 package com.example.owner.betterthanmal;
 
-import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
-import android.preference.PreferenceManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
-
-import com.android.volley.Request;
-
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import io.ap1.libap1util.ApiCaller;
-import io.ap1.libap1util.CallbackDefaultVolley;
 
 public class ActivityStartup extends AppCompatActivity implements Constants{
 

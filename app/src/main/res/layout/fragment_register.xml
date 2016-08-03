@@ -2,16 +2,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.owner.betterthanmal.FragmentRegister">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColorHighlight="@color/colorAccent"
+        android:hint="First Name"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/reg_firstname"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
 
-    <TextView
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColorHighlight="@color/colorAccent"
+        android:hint="Last Name"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/reg_lastname"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reg_firstname"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textColorHighlight="@color/colorAccent"
+        android:hint="Email"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/reg_email"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reg_lastname"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColorHighlight="@color/colorAccent"
+        android:hint="Password"
+        android:textColorHint="@color/colorAccent"
+        android:id="@+id/reg_password"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reg_email"
+        android:layout_marginTop="20dp"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="HAVEN'T STARTED YET!"
-        android:layout_centerVertical="true"
+        android:text="Register"
+        android:id="@+id/register"
+        android:layout_below="@+id/reg_password"
+        android:background="@drawable/outline"
+        android:textColor="@color/colorAccent"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorAccent"/>
+        android:layout_marginTop="20dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_password"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/reg_progressbar"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_image"
+        android:layout_below="@+id/reg_progressbar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/yuigahama"/>
 
 </RelativeLayout>

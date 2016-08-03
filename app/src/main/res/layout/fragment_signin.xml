@@ -59,6 +59,7 @@
         android:layout_below="@+id/progressbar"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="30dp"
+        android:id="@+id/signin_image"
         android:src="@drawable/yuigahama"/>
 
 </RelativeLayout>

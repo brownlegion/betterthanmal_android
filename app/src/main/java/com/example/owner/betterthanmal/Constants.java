@@ -8,8 +8,15 @@ public interface Constants {
     String ip = "http://159.203.13.218";
     String queryPath = "/back_end/queryWaifuDatabase.php";
     String signinPath = "/back_end/signin.php";
+    String registerPath = "/back_end/registerUser.php";
     String hash = "1d951f1953958f15a71e2978e37267ebaed1a06d";
 
-    String [] fragmentTags = {"waifuFragment", "titlesFragment", "seiyuusFragment", "seiyuusTitlesFragment", "seiyuusArchetypeFragment", "webviewFragment",
-                                "signinFragment", "registerFragment"};
+    String [] fragmentTags = {"waifuFragment", //0
+            "titlesFragment", //1
+            "seiyuusFragment", //2
+            "seiyuusTitlesFragment", //3
+            "seiyuusArchetypeFragment", //4
+            "webviewFragment", //5
+            "signinFragment", //6
+            "registerFragment"}; //7
 }
