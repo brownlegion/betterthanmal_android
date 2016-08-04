@@ -1,22 +1,21 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 import android.content.Context;
-import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Display;
-import android.view.DragEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.example.owner.betterthanmal.AdapterAdmin;
+import com.example.owner.betterthanmal.AdminObject;
+import com.example.owner.betterthanmal.Constants;
+import com.example.owner.betterthanmal.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -28,7 +27,7 @@ import java.util.Map;
 import io.ap1.libap1util.ApiCaller;
 import io.ap1.libap1util.CallbackDefaultVolley;
 
-public class ActivityAdmin extends AppCompatActivity implements Constants{
+public class ActivityAdmin extends AppCompatActivity implements Constants {
 
     private final String TAG = "AdminActivity";
     private ListView log, users;
@@ -50,8 +49,9 @@ public class ActivityAdmin extends AppCompatActivity implements Constants{
                 String userid = userList.get(position).getId();
                 Log.i(TAG, userid);
                 //Make an alert dialog here.
-                /*if ((!userid.equals("1")) && (!userid.equals("5"))) {
-                    Map<String, String> parameters = new HashMap<>();
+                if ((!userid.equals("1")) && (!userid.equals("5"))) {
+                    Toast.makeText(ActivityAdmin.this, "Deleting " + userid, Toast.LENGTH_SHORT).show();
+                    /*Map<String, String> parameters = new HashMap<>();
                     parameters.put("hash", hash);
                     parameters.put("query", "delete from users where user_id=" + userid);
                     ApiCaller.getInstance(mContext).setAPI(ip, queryPath, null, parameters, Request.Method.POST).exec(new CallbackDefaultVolley() {
@@ -65,8 +65,8 @@ public class ActivityAdmin extends AppCompatActivity implements Constants{
                         public void onException(String e) {
                             Log.i(TAG, "exception " + e);
                         }
-                    });
-                }*/
+                    });*/
+                }
                 return false;
             }
         });

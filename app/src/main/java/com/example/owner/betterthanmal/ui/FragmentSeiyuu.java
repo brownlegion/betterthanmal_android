@@ -1,4 +1,4 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 
 import android.app.FragmentTransaction;
@@ -17,6 +17,10 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.example.owner.betterthanmal.AdapterWaifu;
+import com.example.owner.betterthanmal.Constants;
+import com.example.owner.betterthanmal.R;
+import com.example.owner.betterthanmal.WaifuDatabaseObject;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -33,7 +37,7 @@ import io.ap1.libap1util.CallbackDefaultVolley;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentSeiyuu extends FragmentAbstract implements Constants{
+public class FragmentSeiyuu extends FragmentAbstract implements Constants {
 
     private EditText searchWaifu;
     private String currentSearch = "";

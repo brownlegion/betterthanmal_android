@@ -1,4 +1,4 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 
 import android.app.Fragment;
@@ -17,6 +17,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.example.owner.betterthanmal.Constants;
+import com.example.owner.betterthanmal.R;
+import com.example.owner.betterthanmal.User;
 
 import org.json.JSONObject;
 
@@ -26,7 +29,7 @@ import java.util.Map;
 import io.ap1.libap1util.ApiCaller;
 import io.ap1.libap1util.CallbackDefaultVolley;
 
-public class FragmentSignin extends Fragment implements View.OnClickListener, CallbackDefaultVolley, Constants{
+public class FragmentSignin extends Fragment implements View.OnClickListener, CallbackDefaultVolley, Constants {
 
     private EditText email, password;
     private Button signin;

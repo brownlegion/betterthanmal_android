@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     android:id="@+id/fragment_container_main"
     android:background="@color/colorPrimary"
-    tools:context=".ActivityUser">
+    tools:context=".ui.ActivityUser">
 
 </RelativeLayout>

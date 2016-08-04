@@ -9,15 +9,15 @@
 
     <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityUser" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".ActivityStartup" android:screenOrientation="portrait" >
+        <activity android:name=".ui.ActivityUser" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".ui.ActivityStartup" android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityChooser" android:screenOrientation="portrait" />
-        <activity android:name=".ActivityAdmin" android:screenOrientation="portrait" />
+        <activity android:name=".ui.ActivityChooser" android:screenOrientation="portrait" />
+        <activity android:name=".ui.ActivityAdmin" android:screenOrientation="portrait" />
     </application>
 
 </manifest>

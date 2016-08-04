@@ -1,13 +1,17 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.owner.betterthanmal.Comparators;
+import com.example.owner.betterthanmal.Constants;
+import com.example.owner.betterthanmal.R;
+
 import java.util.Comparator;
 
-public class ActivityUser extends AppCompatActivity implements Constants{
+public class ActivityUser extends AppCompatActivity implements Constants {
 
     private final String TAG = "ActivityUsers";
     public Comparator comparator;

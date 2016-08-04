@@ -1,4 +1,4 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 
 import android.app.Fragment;
@@ -14,6 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.example.owner.betterthanmal.Constants;
+import com.example.owner.betterthanmal.R;
 
 import org.json.JSONObject;
 

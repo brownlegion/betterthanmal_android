@@ -1,4 +1,4 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 import android.app.FragmentTransaction;
 import android.content.Context;
@@ -12,7 +12,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class ActivityStartup extends AppCompatActivity implements Constants{
+import com.example.owner.betterthanmal.Constants;
+import com.example.owner.betterthanmal.R;
+
+public class ActivityStartup extends AppCompatActivity implements Constants {
 
     private final String TAG = "ActivityStartup";
 

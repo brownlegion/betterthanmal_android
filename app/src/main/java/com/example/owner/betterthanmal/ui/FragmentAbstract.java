@@ -1,6 +1,8 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 import android.app.Fragment;
+
+import com.example.owner.betterthanmal.AdapterWaifu;
 
 /**
  * Created by Krishna N. Deoram on 2016-07-28.

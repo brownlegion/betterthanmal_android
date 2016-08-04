@@ -1,4 +1,4 @@
-package com.example.owner.betterthanmal;
+package com.example.owner.betterthanmal.ui;
 
 
 import android.app.Fragment;
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.owner.betterthanmal.R;
 
 public class FragmentWebview extends Fragment {
 
