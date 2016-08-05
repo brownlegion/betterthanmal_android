@@ -52,7 +52,7 @@ public class FragmentSeiyuuArchetype extends FragmentAbstract implements Constan
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Get the waifu name using the seiyuu and the title. If nothing is returned, say that. If more than 1 is returned, display all.
+                //Get the waifu name using the seiyuu and the archetype. If nothing is returned, say that. If more than 1 is returned, display all.
                 searchForStuff(list.get(position));
             }
         });
@@ -120,7 +120,7 @@ public class FragmentSeiyuuArchetype extends FragmentAbstract implements Constan
                 textView.setText(waifus);
                 textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                 promptBuilder.setView(textView);
-                promptBuilder.setTitle(object.getArchetype() + " characters by " + object.getName());
+                promptBuilder.setTitle(object.getArchetype() + "s by " + object.getName());
                 AlertDialog dialog = promptBuilder.create();
                 dialog.show();
             }
@@ -145,7 +145,6 @@ public class FragmentSeiyuuArchetype extends FragmentAbstract implements Constan
             Log.e(TAG, e.toString());
             Toast.makeText(getActivity(), e.toString(), Toast.LENGTH_SHORT).show();
         } finally {
-            //string = string.substring(0, (string.length() -1));
             return string;
         }
     }
