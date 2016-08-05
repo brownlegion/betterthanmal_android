@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/listView_title"
         android:layout_below="@+id/title_search"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/to_insert_title"/>
 

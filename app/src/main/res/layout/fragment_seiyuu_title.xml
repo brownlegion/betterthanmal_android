@@ -1,16 +1,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
     android:layout_height="match_parent"
     tools:context=".ui.FragmentSeiyuuTitle">
 
-    <TextView
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="HAVEN'T STARTED YET!"
+        android:id="@+id/listView_seiyuu_title"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/to_insert_seiyuu_title"/>
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_insert_seiyuu_title"
+        android:text="Insert Seiyuu-Title"
         android:textColor="@color/colorAccent"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:background="@drawable/outline"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

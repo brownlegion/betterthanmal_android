@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/menu_waifu_id"
-        android:title="Sort by Id"
+        android:title="Least Recent"
         android:orderInCategory="100"
         app:showAsAction="never" />
 

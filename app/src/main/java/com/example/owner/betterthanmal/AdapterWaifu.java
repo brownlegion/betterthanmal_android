@@ -88,7 +88,7 @@ public class AdapterWaifu extends BaseAdapter {
 
         switch (waifu.getType()) {
             case "waifu":
-                viewHolder.first.setVisibility(View.VISIBLE);
+                //viewHolder.first.setVisibility(View.VISIBLE);
                 viewHolder.first.setText("ID: " + waifu.getId());
                 if (waifu.getName().indexOf(" ") != 0)
                     viewHolder.second.setText("Name: " + waifu.getName());
@@ -105,7 +105,7 @@ public class AdapterWaifu extends BaseAdapter {
                 viewHolder.sixth.setVisibility(View.VISIBLE);
                 break;
             case "title":
-                viewHolder.first.setVisibility(View.VISIBLE);
+                //viewHolder.first.setVisibility(View.VISIBLE);
                 viewHolder.first.setText("ID: " + waifu.getId());
                 viewHolder.second.setVisibility(View.VISIBLE);
                 viewHolder.second.setText("Title: " + waifu.getTitle());
@@ -117,7 +117,7 @@ public class AdapterWaifu extends BaseAdapter {
                 viewHolder.fourth.setText("Canon: " + waifu.getCanon());
                 break;
             case "seiyuu":
-                viewHolder.first.setVisibility(View.VISIBLE);
+                //viewHolder.first.setVisibility(View.VISIBLE);
                 viewHolder.first.setText("ID: " + waifu.getId());
                 viewHolder.second.setVisibility(View.VISIBLE);
                 viewHolder.second.setText("Name: " + waifu.getName());
@@ -129,7 +129,7 @@ public class AdapterWaifu extends BaseAdapter {
                 viewHolder.fourth.setText("Dirty: " + waifu.getDirty()); //Fourth
                 break;
             case "seiyuu-title":
-                viewHolder.first.setVisibility(View.VISIBLE);
+                //viewHolder.first.setVisibility(View.VISIBLE);
                 viewHolder.first.setText("ID: " + waifu.getId());
                 viewHolder.second.setVisibility(View.VISIBLE);
                 viewHolder.second.setText("Name: " + waifu.getName());
@@ -137,7 +137,7 @@ public class AdapterWaifu extends BaseAdapter {
                 viewHolder.third.setText("Title: " + waifu.getTitle());
                 break;
             case "seiyuu-archetype":
-                viewHolder.first.setVisibility(View.VISIBLE);
+                //viewHolder.first.setVisibility(View.VISIBLE);
                 viewHolder.first.setText("ID: " + waifu.getId());
                 viewHolder.second.setVisibility(View.VISIBLE);
                 viewHolder.second.setText("Name: " + waifu.getName());

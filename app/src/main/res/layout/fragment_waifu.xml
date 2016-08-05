@@ -21,7 +21,7 @@
         android:id="@+id/listView"
         android:layout_below="@+id/waifu_search"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_above="@+id/to_insert_waifu"/>
 
     <Button

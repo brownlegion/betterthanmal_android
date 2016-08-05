@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/menu_waifu_id"
-        android:title="Sort by ID"
+        android:title="Least Recent"
         android:orderInCategory="100"
         app:showAsAction="never" />
 
@@ -15,7 +15,7 @@
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/menu_waifu_archetype"
+        android:id="@+id/menu_seiyuu_archetype"
         android:title="Sort by Archetype"
         android:orderInCategory="300"
         app:showAsAction="never" />

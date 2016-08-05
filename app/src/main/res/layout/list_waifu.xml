@@ -22,6 +22,7 @@
         android:visibility="gone"
         android:id="@+id/second"
         android:layout_below="@+id/first"
+        android:layout_marginTop="10dp"
         android:layout_alignStart="@+id/first"/>
 
     <TextView

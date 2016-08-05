@@ -108,6 +108,12 @@ public class ActivityUser extends AppCompatActivity implements Constants {
         else if ((id == R.id.menu_waifu_dirty) && (!Comparators.getType().equals("dirty"))) {
             comparator = Comparators.getComparator("dirty");
             colour = "fourth";
+        } else if ((id == R.id.menu_seiyuu_title) && (!Comparators.getType().equals("title"))) {
+            comparator = Comparators.getComparator("title");
+            colour = "third";
+        } else if ((id == R.id.menu_seiyuu_archetype) && (!Comparators.getType().equals("archetype"))) {
+            comparator = Comparators.getComparator("archetype");
+            colour = "third";
         }
 
         reorder(colour);

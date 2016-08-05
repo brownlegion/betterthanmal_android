@@ -5,7 +5,7 @@ package com.example.owner.betterthanmal;
  * Gumi is love. Gumi is life.
  */
 public interface Constants {
-    
+
     String ip = "http://159.203.13.218";
     String hash = "1d951f1953958f15a71e2978e37267ebaed1a06d";
     String signinPath = "/back_end/signin.php";
