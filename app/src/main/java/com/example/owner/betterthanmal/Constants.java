@@ -6,7 +6,7 @@ package com.example.owner.betterthanmal;
  */
 public interface Constants {
 
-    String ip = "http://159.203.13.218";
+    String ip = "http://138.197.141.160";
     String hash = "1d951f1953958f15a71e2978e37267ebaed1a06d";
     String signinPath = "/back_end/signin.php";
     String registerPath = "/back_end/registerUser.php";

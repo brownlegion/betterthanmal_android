@@ -105,8 +105,8 @@ public class FragmentSeiyuuArchetype extends FragmentAbstract implements Constan
         Log.i(TAG, "Name: " + object.getName() + " Archetype: " + object.getArchetype());
         Map<String, String> parameters = new HashMap<>();
         parameters.put("hash", hash);
-        parameters.put("query", "select distinct waifu_name from waifu_real w, voice_actress va, archetype a, archetype_voice_actress av where" +
-                " va.va_id = av.va_fk_id and archetype_id = av.archetype_fk_id and w.archetype_va_fk_id = av.archetype_va_id and va.va_name like \'"
+        parameters.put("query", "select distinct waifu_name, title_name from waifu_real w, voice_actress va, archetype a, archetype_voice_actress av, title t where" +
+                " va.va_id = av.va_fk_id and archetype_id = av.archetype_fk_id and w.archetype_va_fk_id = av.archetype_va_id and t.title_id = w.title_fk_id and va.va_name like \'"
                 + object.getName() + "\' and a.archetype_name like \'" + object.getArchetype() + "\' order by w.waifu_id");
         ApiCaller.getInstance(getActivity()).setAPI(ip, queryPath, null, parameters, Request.Method.POST).exec(new CallbackDefaultVolley() {
             @Override
@@ -139,7 +139,7 @@ public class FragmentSeiyuuArchetype extends FragmentAbstract implements Constan
             JSONObject object;
             for (int i = 0; i < array.length(); i++) {
                 object = array.getJSONObject(i);
-                string += object.getString("waifu_name") + "\n";
+                string += object.getString("waifu_name") + " in " + object.getString("title_name")  + "\n" ;
             }
         } catch (Exception e) {
             Log.e(TAG, e.toString());
